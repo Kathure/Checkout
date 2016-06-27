@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "944881032298",
+    "firebase_url": "https://checkout-374fa.firebaseio.com",
+    "project_id": "checkout-374fa",
+    "storage_bucket": "checkout-374fa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:944881032298:android:fa43a027c0e0d7cc",
+        "android_client_info": {
+          "package_name": "io.google.checkout"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "944881032298-1utef4dl85mc8fp6p0vdak88o1bdj3u5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHbJVa1bK_TGtuMklb-F7fiUl2XaLn1kc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
