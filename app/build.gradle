@@ -31,5 +31,6 @@ dependencies {
         transitive = true;
     }
     compile 'com.github.paolorotolo:appintro:4.0.0'
+    compile 'com.firebase:geofire:1.1.0+'
 
 }

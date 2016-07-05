@@ -1,5 +1,7 @@
 package io.google.checkout;
 
+import android.content.Intent;
+import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -11,13 +13,25 @@ public class IntroActivity extends AppIntro2 {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_intro);
 
-        addSlide(first_fragment);
-        addSlide(second_fragment);
-        addSlide(third_fragment);
-        addSlide(fourth_fragment);
+        super.onCreate(savedInstanceState);
+        addSlide(Sampleslide.newInstance(R.layout.first_fragment));
+        addSlide(Sampleslide.newInstance(R.layout.second_fragment));
+        addSlide(Sampleslide.newInstance(R.layout.third_fragment));
 
-        setProgressButtonEnabled();
+
+        setProgressButtonEnabled(true);
     }
+
+
+    @Override
+    public void onDonePressed(Fragment currentFragment) {
+        super.onDonePressed(currentFragment);
+
+        Intent intent = new Intent(IntroActivity.this,MainActivity.class);
+        startActivity(intent);
+    }
+
+
 }
+
